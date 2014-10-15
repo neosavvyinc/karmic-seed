@@ -8,6 +8,8 @@ module.exports = function (grunt) {
     grunt.registerTask('default', [
         'clean:target',
 
+        'bower',
+
         'copy:core',
         'copy:web',
 

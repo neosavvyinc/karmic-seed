@@ -5,7 +5,7 @@ module.exports = {
                 expand: true,
                 cwd: 'core/src/main/',
                 src: [
-                    '**/*.js'
+                    '**/*'
                 ],
                 dest: "target/core/"
             }
@@ -17,7 +17,7 @@ module.exports = {
                 expand: true,
                 cwd: 'web/src/main/',
                 src: [
-                    '**/*.js'
+                    '**/*'
                 ],
                 dest: "target/web/"
             }

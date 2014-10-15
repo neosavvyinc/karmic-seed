@@ -8,6 +8,9 @@
     "globals"
   ],
   "license": "MIT",
+  "dependencies": {
+    "angular": "1.3.0"
+  },
   "ignore": [
     "**/.*",
     "node_modules",

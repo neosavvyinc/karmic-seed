@@ -3,3 +3,7 @@ node_modules
 *.swo
 *.swp
 .idea
+
+core/src/main/lib
+web/src/main/lib
+mobile/src/main/lib
