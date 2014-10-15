@@ -4,6 +4,8 @@ node_modules
 *.swp
 .idea
 
+target/
+
 core/src/lib
 web/src/lib
 mobile/src/lib

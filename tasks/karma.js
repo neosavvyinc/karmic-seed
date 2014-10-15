@@ -14,18 +14,27 @@ module.exports = {
     core: {
         options: {
             singleRun: true,
-            files: coreScripts
+            files: coreScripts,
+            coverageReporter: {
+                dir: 'target/coverage/core/'
+            }
         }
     },
     web: {
         options: {
-            files: webScripts
+            files: webScripts,
+            coverageReporter: {
+                dir: 'target/coverage/web/'
+            }
         }
     },
     single: {
         options: {
             singleRun: true,
-            files: coreScripts.concat(webScripts)
+            files: coreScripts.concat(webScripts),
+            coverageReporter: {
+                dir: 'target/coverage/combined/'
+            }
         }
     }
 }
