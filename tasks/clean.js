@@ -4,7 +4,7 @@ module.exports = {
         'target',
         'lib',
         'bower_components',
-        'core/src/main/lib/*',
-        'web/src/main/lib/*'
+        'core/src/lib/*',
+        'web/src/lib/*'
     ]
 }

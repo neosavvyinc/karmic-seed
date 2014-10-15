@@ -1,7 +1,7 @@
 module.exports = {
     install: {
         options: {
-            targetDir: "core/src/main/lib"
+            targetDir: "core/src/lib"
         }
     }
 }
