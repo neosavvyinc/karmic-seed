@@ -3,11 +3,12 @@ module.exports = {
         sourceMap: true,
         sourceMapStyle: 'inline'
     },
-    dev: {
-        src: ['src/main/**/*.js'],
-        dest: 'target/app.js'
+    core: {
+        src: ['core/src/main/**/*.js'],
+        dest: 'target/core.js'
     },
-    prod: {
-
+    web: {
+        src: ['target/core.js', 'web/src/main/**/*.js'],
+        dest: 'target/web.js'
     }
 }

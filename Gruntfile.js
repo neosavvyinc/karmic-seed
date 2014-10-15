@@ -5,5 +5,9 @@ module.exports = function (grunt) {
         configPath: path.join(process.cwd(), 'tasks')
     });
 
-    grunt.registerTask('default', ['clean:target', 'concat:dev']);
+    grunt.registerTask('default', [
+        'clean:target',
+        'concat:core',
+        'concat:web'
+    ]);
 };
