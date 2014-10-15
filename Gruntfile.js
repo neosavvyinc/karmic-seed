@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         'copy:core',
         'copy:web',
 
-        'karma',
+        'karma:single',
 
         'concat:core',
         'concat:web'

@@ -5,6 +5,9 @@ var coreScripts = [
     webScripts = [
         'web/src/main/**/*.js',
         'web/src/test/**/*-spec.js'
+    ],
+    libScripts = [
+        'core/src/lib/angular/angular.js'
     ];
 
 module.exports = {
@@ -13,19 +16,18 @@ module.exports = {
     },
     core: {
         options: {
-            singleRun: true,
-            files: coreScripts
+            files: libScripts.concat(coreScripts)
         }
     },
     web: {
         options: {
-            files: webScripts
+            files: libScripts.concat(webScripts)
         }
     },
     single: {
         options: {
             singleRun: true,
-            files: coreScripts.concat(webScripts)
+            files: libScripts.concat(coreScripts, webScripts)
         }
     }
 }
