@@ -5,6 +5,9 @@ var coreScripts = [
     webScripts = [
         'web/src/main/**/*.js',
         'web/src/test/**/*-spec.js'
+    ],
+    libScripts = [
+        'core/src/lib/angular/angular.js'
     ];
 
 module.exports = {
@@ -14,7 +17,7 @@ module.exports = {
     core: {
         options: {
             singleRun: true,
-            files: coreScripts,
+            files:libScripts.concat(coreScripts),
             coverageReporter: {
                 dir: 'target/coverage/core/'
             }
@@ -22,7 +25,7 @@ module.exports = {
     },
     web: {
         options: {
-            files: webScripts,
+            files: libScripts.concat(webScripts),
             coverageReporter: {
                 dir: 'target/coverage/web/'
             }
@@ -31,7 +34,7 @@ module.exports = {
     single: {
         options: {
             singleRun: true,
-            files: coreScripts.concat(webScripts),
+            files: libScripts.concat(coreScripts, webScripts),
             coverageReporter: {
                 dir: 'target/coverage/combined/'
             }
