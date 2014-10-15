@@ -5,10 +5,10 @@ module.exports = {
     },
     core: {
         src: ['core/src/main/**/*.js'],
-        dest: 'target/core.js'
+        dest: 'target/core/core.concat.js'
     },
     web: {
         src: ['target/core.js', 'web/src/main/**/*.js'],
-        dest: 'target/web.js'
+        dest: 'target/web/web.concat.js'
     }
 }

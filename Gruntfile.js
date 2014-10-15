@@ -7,6 +7,10 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'clean:target',
+
+        'copy:core',
+        'copy:web',
+
         'concat:core',
         'concat:web'
     ]);
