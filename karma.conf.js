@@ -23,16 +23,35 @@ module.exports = function(config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: { },
+    preprocessors: {
+        'core/src/main/**/*.js':'coverage',
+        'web/src/main/**/*.js':'coverage',
+        'core/src/main/directives/*.html': 'ng-html2js',
+        'web/src/main/directives/*.html': 'ng-html2js'
+    },
+
+    ngHtml2JsPreprocessor: {
+      stripPrefix: 'src/main/resources/'
+    },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage', 'junit'],
+
+    coverageReporter: {
+        type: 'html',
+        dir: 'target/coverage/'
+    },
 
 
-    // web server port
+    junitReporter: {
+      outputFile: 'target/coverage/cobertura.unit.xml'
+    },
+
+
+      // web server port
     port: 9876,
 
 
