@@ -7,7 +7,8 @@ var coreScripts = [
         'web/src/test/**/*-spec.js'
     ],
     libScripts = [
-        'core/src/lib/angular/angular.js'
+        'core/src/lib/angular/angular.js',
+        'core/src/lib/angular-mocks/angular-mocks.js'
     ];
 
 module.exports = {

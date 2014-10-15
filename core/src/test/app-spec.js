@@ -3,11 +3,11 @@ describe('karmic-core', function () {
         $injector;
 
     beforeEach(function () {
-//        module('karmic-core');
-//        
-//        inject(function (_$rootScope_, _$injector_) {
-//            $rootScope = _$rootScope_;
-//        });
+        module('karmic-core');
+        
+        inject(function (_$rootScope_, _$injector_) {
+            $rootScope = _$rootScope_;
+        });
     });
 
     it ('should be awesome', function () {
