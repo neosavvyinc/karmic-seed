@@ -1,17 +1,19 @@
 describe('karmic-core', function () {
     var $rootScope,
-        $injector,
+        $injector;
 
     beforeEach(function () {
-        module('karmic-core');
-        
-        inject(function (_$rootScope_, _$injector_) {
-            $rootScope = _$rootScope_;
-        });
+//        module('karmic-core');
+//        
+//        inject(function (_$rootScope_, _$injector_) {
+//            $rootScope = _$rootScope_;
+//        });
     });
 
-    it('should be awesome', function () {
-        var awesome = true;
-        expect(awesome).toBe(true);
+    it ('should be awesome', function () {
+        var thisApp = true,
+            awesome = true;
+
+        expect(thisApp).toBe(awesome);
     });
 });
