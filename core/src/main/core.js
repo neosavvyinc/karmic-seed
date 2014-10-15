@@ -1,4 +1,4 @@
-angular.module('karmic-core', [])
-    .config([function () {
-        
-    }]);
+//angular.module('karmic-core', [])
+//    .config([function () {
+//        
+//    }]);
