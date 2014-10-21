@@ -7,18 +7,14 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'clean:target',
-
         'bower',
-
         'copy:core',
         'copy:web',
-
         'karma:single',
-
+        'concat:libs',
         'concat:core',
-        'concat:web'
-
-
-
+        'concat:web',
+        'symlink:lib',
+        'symlink:core'
     ]);
 };

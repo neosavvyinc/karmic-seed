@@ -25,6 +25,7 @@
     "karma-jasmine": "^0.1.5",
     "karma-junit-reporter": "^0.2.2",
     "karma-phantomjs-launcher": "^0.1.4",
-    "load-grunt-config": "^0.13.2"
+    "load-grunt-config": "^0.13.2",
+    "grunt-contrib-symlink": "^0.3.0"
   }
 }
